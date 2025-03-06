@@ -1,4 +1,4 @@
-#f9f9f9 (main background)
+#f9f9f9 (main background, text color)
 #eaeaea (cards background)
 #333333 (text color main, navigation bar, footer)
 #787d66 (hoover effect, button colors)
