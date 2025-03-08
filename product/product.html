@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>header</header>
+    <!--developing main content relation to the products-->
+    <div class="products">
+        <input type="checkbox" id="toggle-aside" hidden>
+        <aside id="all-filters">
+            <label for="toggle-aside" class="close-button">X</label>
+            <!--Genre filter-->
+            <div class="filter">
+                <fieldset>
+                    <legend>Genre</legend>
+                    <input type="checkbox" id="genre-fiction" name="genre" value="Fiction">
+                    <label for="genre-fiction">Fiction</label><br>
+                    <input type="checkbox" id="genre-mystery" name="genre" value="Mystery">
+                    <label for="genre-mystery">Mystery</label><br>
+                    <input type="checkbox" id="genre-scifi" name="genre" value="Science Fiction">
+                    <label for="genre-scifi">Science Fiction</label><br>
+                    <input type="checkbox" id="genre-fantasy" name="genre" value="Fantasy">
+                    <label for="genre-fantasy">Fantasy</label><br>
+                    <input type="checkbox" id="genre-romance" name="genre" value="Romance">
+                    <label for="genre-romance">Romance</label><br>
+                </fieldset>
+            </div>
+
+            <!--Author filter-->
+            <div class="filter">
+                <fieldset>
+                    <legend>Author</legend>
+                    <input type="checkbox" id="author-jkrowling" name="author" value="J.K. Rowling">
+                    <label for="author-jkrowling">J.K. Rowling</label><br>
+                    <input type="checkbox" id="author-georgeorwell" name="author" value="George Orwell">
+                    <label for="author-georgeorwell">George Orwell</label><br>
+                    <input type="checkbox" id="author-janeausten" name="author" value="Jane Austen">
+                    <label for="author-janeausten">Jane Austen</label><br>
+                    <input type="checkbox" id="author-stephenking" name="author" value="Stephen King">
+                    <label for="author-stephenking">Stephen King</label><br>
+                    <input type="checkbox" id="author-agathachristie" name="author" value="Agatha Christie">
+                    <label for="author-agathachristie">Agatha Christie</label><br>
+                </fieldset>
+            </div>
+
+            <!--Customer review filter-->
+            <div class="filter">
+                <fieldset>
+                    <legend>Customer Review</legend>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </fieldset>
+            </div>
+
+            <!--Price filter-->
+            <div class="filter">
+                <fieldset>
+                    <legend>Price</legend>
+                    <label for="price-range">0$</label>
+                    <input type="range" id="price-range" name="price-range" min="0" max="70" value="35">
+                    <output for="price-range" id="price-output">70$</output>
+                </fieldset>
+            </div>
+            <button id="apply-filter">Apply Filters</button>
+
+        </aside>
+        <main>
+            <label for="toggle-aside" class="filter-button">Filter</label>
+            <section class="all-cards">
+                <div class="card">
+                    <img src="../assets/images/book1.webp" alt="book cover" height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore incidunt, nostrum quis temporibus a repellendus minus natus dicta, aliquid at ut amet optio, aut rerum ipsa blanditiis necessitatibus possimus?</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(164)</h6>
+                    </div>
+                    <h5>13$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book2.webp" alt="book cover" height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsum aperiam qui dolor nobis aspernatur distinctio quas cumque laboriosam placeat. Explicabo dolore ipsam obcaecati consequuntur beatae dolores atque odit modi.</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(51)</h6>
+                    </div>
+                    <h5>7$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book3.webp" alt="book cover" height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta voluptate animi quia voluptatibus adipisci earum provident necessitatibus aliquam ducimus iusto atque sed quod aperiam numquam error, incidunt in minima.</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(235)</h6>
+                    </div>
+                    <h5>10$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book4.webp" alt="book cover" height="320px">
+                    <p class="book-summary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad velit quia, quibusdam harum voluptate porro reiciendis beatae natus assumenda maxime, consequuntur fugit dicta accusamus, optio rem. Ea necessitatibus voluptatibus deleniti.</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(167)</h6>
+                    </div>
+                    <h5>20$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book5.webp" alt="book cover" height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum aliquam dolores, rerum quo nemo quos tempore, ea maiores natus dolorem? Laudantium necessitatibus veniam facilis cum alias delectus hic suscipit?</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(780)</h6>
+                    </div>
+                    <h5>16$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book1.webp" alt="book cover"height="320px">
+                    <p class="book-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non excepturi qui ea nam unde expedita facilis quae. Ipsa sit velit qui rerum odit harum libero dicta nihil culpa consectetur. Sint.</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(483)</h6>
+                    </div>
+                    <h5>5$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book4.webp" alt="book cover"height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dicta deleniti praesentium assumenda a! Reiciendis, laudantium vero esse aliquid molestiae voluptatibus atque necessitatibus eos nam aut ut facilis. Cupiditate, voluptate.</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(10)</h6>
+                    </div>
+                    <h5>45$</h5>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/book5.webp" alt="book cover"height="320px">
+                    <p class="book-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse, quibusdam totam ex minima neque voluptatem ipsam ad natus corrupti eveniet hic quo aliquid architecto a iusto. Aliquid, adipisci reiciendis!</p>
+                    <div class="author&purchase">
+                        <h6>Author-name</h6>
+                        <h6>(231)</h6>
+                    </div>
+                    <h5>32$</h5>
+                    <button>Buy Now</button>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>

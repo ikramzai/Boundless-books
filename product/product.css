@@ -1,0 +1,64 @@
+/* Mobile-first styles */
+
+body {
+  padding: 0;
+  margin: 0;
+  header {
+    background-color: aqua;
+  }
+  .products {
+    background-color: bisque;
+    #all-filters {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      overflow-y: auto;
+      box-sizing: border-box;
+      padding: 1em;
+      background-color: #787d66;
+      .close-button {
+        display: block;
+        text-align: right;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .filter {
+        margin: 1rem;
+        padding: 1rem;
+        fieldset {
+            .checked {
+                color: orange;
+            }
+        }
+      }
+      #apply-filter {
+        display: none;
+      }
+    }
+    #toggle-aside:checked ~ #all-filters {
+      display: block;
+    }
+    main {
+        .filter-button {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            z-index: 1001;
+            cursor: pointer;
+        }
+    }
+  }
+  footer {
+    background-color: black;
+  }
+}
