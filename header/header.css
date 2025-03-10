@@ -50,13 +50,13 @@ header {
     top: 90px;
     left: 0;
     width: 100%;
-    
+   
     
 }
-.nav-links li {
+.nav-links  li {
     padding: 10px 0;
     list-style: none;
-}
+} 
 .nav-links a {
     color:#333333;
     text-decoration: none;
